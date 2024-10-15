@@ -23,7 +23,7 @@ publishing {
     publications {
         create<MavenPublication>("mavenJava") {
             from(components["java"])
-            groupId = "com.github.jigar23" // Your Group ID
+            groupId = "com.github.Jigar-23" // Your Group ID
             artifactId = "jigar-lib-maven-central" // Your artifact ID
             version = "1.0.0" // Your version
             pom {
@@ -64,7 +64,6 @@ publishing {
 }
 
 signing {
-    useGpgCmd()
     sign(publishing.publications["mavenJava"])
 }
 
